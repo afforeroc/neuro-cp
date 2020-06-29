@@ -8,10 +8,6 @@ body {
   color: #5a5a5a;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
-}
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -44,14 +40,14 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.section .col-lg-4 {
+.marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.section h2 {
+.marketing h2 {
   font-weight: 400;
 }
-.section .col-lg-4 p {
+.marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
@@ -93,4 +89,3 @@ body {
     margin-top: 7rem;
   }
 }
-  

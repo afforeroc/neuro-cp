@@ -9,8 +9,6 @@
 
     <title>NeuroCP</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/carousel/">
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -20,35 +18,24 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-        <a class="navbar-brand text-dark ml-2" href="#">NeuroCP</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <!-- ml-auto: pushing two items to the left -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">NeuroCP</a>
+        <div class="d-none d-md-block collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
-            <!-- p-* padding -->
-            <li class="nav-item p-2 active">                     
-              <a class="nav-link text-dark" href="#quienes-somos">Quiénes Somos</a>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#que-es">Qué es</a>
             </li>
-            <li class="nav-item p-2">
-              <a class="nav-link text-dark" href="#equipo">Equipo</a>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#equipo">Equipo</a>
             </li>
-            <li class="nav-item p-2">
-              <a class="nav-link text-dark" href="#precios">Precios</a>
-            </li>
-            <li class="nav-item p-2">
-              <a class="nav-link text-dark" href="#contacto">Contacto</a>
-            </li>
-            <li class="nav-item p-2">
-              <a class="btn btn-outline-primary" href="#">Registro</a>
-            </li>
-            <li class="nav-item p-2">
-              <a class="btn btn-primary" href="#">Ingreso</a>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#precios">Precios</a>
             </li>
           </ul>
         </div>
+        <li class="nav-item m-2">
+          <a class="btn btn-primary" href="#">Ingreso</a>
+        </li>
       </nav>
     </header>
 
@@ -112,46 +99,18 @@
         </a>
       </div>
 
-      <!-- About, Advantages, Team 
+      <!-- Quienes somos
       ================================================== -->
-      <div id="quienes-somos" class="container section">
-        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">
-          <h1 class="display-4 mt-3 text-center">Quiénes Somos?</h1>
-          <p class="lead mt-3 text-justify">
-            La primera plataforma digital colombiana que permite a las personas con ciertas 
-            discapacidades neurológicas, recuperar sus habilidades cognitivas y 
-            motoras por medio de actividades virtuales que refuerzan la orientación y 
-            la memoria. Nuestra metodología fue validada por expertos, especialistas y 
-            profesionales en Psicología.
-          </p>
-          <h2 class="display-6 my-5 text-center">Ventajas</h1>
-          <div class="row">
-            <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="equipo" class="container section">
-        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">
-          <h1 class="display-4 mt-3 text-center">Equipo</h1>
-          <p class="lead mt-5 text-justify">
-            
-          </p>
-        </div>
+      <div id="que-es" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Qué es?</h1>
+        <p class="lead">
+          La primera plataforma digital colombiana que permite a las personas con ciertas 
+          discapacidades neurológicas, recuperar sus habilidades cognitivas y 
+          motoras por medio de actividades virtuales que refuerzan la orientación y 
+          la memoria. Nuestra metodología fue validada por expertos, especialistas y 
+          profesionales en Psicología.
+        </p>
       </div>
 
 
@@ -159,33 +118,27 @@
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <div class="container section">
+      <div class="marketing">
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="images/team/carolina.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Carolina Paz</h2>
-            <p>
-              Emprendedora y Psicóloga de la Pontificia Universidad Javeriana.<br>
-            </p>
-            <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/gina-carolina-paz-romero/" role="button">LinkedIn &raquo;</a></p>
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="images/team/alexandra.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Alexandra Morales</h2>
-            <p>
-              Emprendedora y Estudiante de Psicóloga de la Pontificia Universidad Javeriana.
-            </p>
-            <p><a class="btn btn-secondary" href="#" role="button">LinkedIn &raquo;</a></p>
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="images/team/andres.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Andrés Forero</h2>
-            <p>
-              Ingeniero de Sistemas y Computación de la Universidad Nacional de Colombia.
-            </p>
-            <p><a class="btn btn-secondary" href="#" role="button">LinkedIn &raquo;</a></p>
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -233,7 +186,7 @@
         <!-- /END THE FEATURETTES -->
 
       </div><!-- /.container -->
-      
+
 
       <div id="precios" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">Precios</h1>
@@ -269,7 +222,7 @@
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>15 Actividades</li>
-                <li>Soporte en nuestras redes sociales</li>
+                <li>Soporte por WhatsApp</li>
                 <li>Sin métricas</li>
               </ul>
               <button type="button" class="btn btn-lg btn-block btn-primary">Obtener</button>
@@ -280,12 +233,12 @@
               <h4 class="my-0 font-weight-normal">Avanzado</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$40,000 COP<br>
+              <h1 class="card-title pricing-card-title">$25,000 COP<br>
                 <small class="text-muted">mes</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>30 Actividades</li>
-                <li>Soporte 24/7</li>
+                <li>Soporte multicanal</li>
                 <li>Con métricas</li>
               </ul>
               <button type="button" class="btn btn-lg btn-block btn-primary">Contactanos</button>
