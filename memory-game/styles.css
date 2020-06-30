@@ -16,7 +16,7 @@ body {
     margin: auto; /* To center horizantally '.memory game' container */
     display: flex; /* Row distribution, for all elements same size */
     flex-wrap: wrap; /* Avoid the elements will show in rows */
-    perspective: 1000px;
+    perspective: 1000px; /* Define how far the object is away from the user */
     /*border: 2px solid aqua;*/
 }
 
@@ -26,7 +26,7 @@ body {
     margin: 5px;
     position: relative;
     transform: scale(1); /* Original size */
-    transform-style: preserve-3d;
+    transform-style: preserve-3d; /* 3D effect */
     transition: transform .5s;
     /*border: 2px solid aqua;*/
 }
@@ -47,10 +47,10 @@ body {
     position: absolute; /* Set absolute if the parent is relative */
     border-radius: 5px;
     background-color: #1c7ccc;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* Backface will hidde when is flipped */
     /*border: 2px solid deeppink;*/
 }
 
 .front-face {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Necessary to see the front face */
 }
