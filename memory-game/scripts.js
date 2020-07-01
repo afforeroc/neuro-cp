@@ -47,5 +47,12 @@ function resetBoard() { // Necessary to work fine avoid double click (line 10).
     [firstCard, secondCard] = [null, null]
 }
 
+(function shuffle() {
+    cards.forEach(card => {
+        let randomPos = Math.floor((Math.random() * 12))
+        card.style.order = randomPos;
+    });
+})(); // This function will be executed inmediately invoked.
+
 cards.forEach(card => card.addEventListener('click', flipCard)); // Link each memory-card a listen a event.
 
