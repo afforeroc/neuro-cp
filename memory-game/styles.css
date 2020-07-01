@@ -11,8 +11,8 @@ body {
 }
 
 .memory-game {
-    width: 640px;
-    height: 640px;
+    height: 70vh; /* The board always display in all screen (without vertical scrolling) */
+    width: 70vh;
     margin: auto; /* To center horizantally '.memory game' container. */
     display: flex; /* Row distribution, for all elements same size. */
     flex-wrap: wrap; /* Whether the flexible items should wrap or not. */
@@ -22,7 +22,7 @@ body {
 
 .memory-card {
     width: calc(25% - 10px); /* To avoid desborder size of '.memory-card' respect '.memory-game'. */
-    height: cacl(33.3333% - 10px); /* Same. */
+    height: calc(33.3333% - 10px); /* Same. */
     margin: 5px; /* Space between cards. */
     position: relative;
     transform: scale(1); /* Original size. */

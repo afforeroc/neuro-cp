@@ -1,6 +1,5 @@
 const cards = document.querySelectorAll('.memory-card'); // Constant list of all memory-cards.
 
-
 let hasFlippedCard = false;
 let lockBoard = false; // Avoid flip one more pairs of cards.
 let firstCard, secondCard;
@@ -55,4 +54,5 @@ function resetBoard() { // Necessary to work fine avoid double click (line 10).
 })(); // This function will be executed inmediately invoked.
 
 cards.forEach(card => card.addEventListener('click', flipCard)); // Link each memory-card a listen a event.
+
 
