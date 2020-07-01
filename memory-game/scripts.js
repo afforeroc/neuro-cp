@@ -9,26 +9,32 @@ function flipCard(){
     if (!hasFlippedCard) { // First click.
         hasFlippedCard = true;
         firstCard = this;
-    } else { // Second click.
-        hasFlippedCard = false;
-        secondCard = this;
-        console.log({firstCard, secondCard});
-
-        // Do cards match?
-        if (firstCard.dataset.framework === 
-            secondCard.dataset.framework) {
-            // It's a match!!!
-            firstCard.removeEventListener('click', flipCard)
-            secondCard.removeEventListener('click', flipCard)
-        } else {
-            setTimeout(() => {
-                firstCard.classList.remove('flip');
-                secondCard.classList.remove('flip');
-            }, 1500);
-        }
+        return;
     }
+    // Second click.
+    hasFlippedCard = false;
+    secondCard = this;
+    checkForMath();
 }
 
+function checkForMath() {
+    let isMatch = firstCard.dataset.framework === 
+        secondCard.dataset.framework;
+    
+    isMatch ? disableCards() : unflipCards();
+}
+
+function disableCards() {
+    firstCard.removeEventListener('click', flipCard)
+    secondCard.removeEventListener('click', flipCard)
+}
+
+function unflipCards() {
+    setTimeout(() => { // Wait time 1.5 seconds after last click.
+        firstCard.classList.remove('flip'); // Return the selected cards to inicial state.
+        secondCard.classList.remove('flip');
+    }, 1500);
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard)); // Link each memory-card a listen a event.
 
